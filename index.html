@@ -1,1 +1,84 @@
-Hello World
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Swipe Events</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+    <header id="page_header">
+        <nav id="primary_navigation">
+            <a href="#"></a>
+        </nav>
+    </header>
+
+
+    <!-- CONTENT -->
+    <main id="page_content">
+        <section class="swipe-container">
+
+            <div class="swipe-list">
+                
+                <!--- ITEM 1 -->
+                <div class="swipe-item">
+                    <div class="swipe-content">
+                        <div class="swipe-content-title">Item 1</div>
+                        <div class="swipe-content-price"><strong>Price</strong>: $1.00</div>
+                        <div class="swipe-content-part"><strong>Part #</strong>: 12345</div>
+                    </div>
+                    <div class="swipe-reveal">
+                        <a href="#" class="swipe-reveal-link"><span class="swipe-reveal-icon">&times;</span></a>
+                    </div>
+                </div>
+                
+                <!--- ITEM 2 -->
+                <div class="swipe-item">
+                    <div class="swipe-content">
+                        <div class="swipe-content-title">Item 2</div>
+                        <div class="swipe-content-price"><strong>Price</strong>: $2.00</div>
+                        <div class="swipe-content-part"><strong>Part #</strong>: 23456</div>
+                    </div>
+                    <div class="swipe-reveal">
+                        <a href="#" class="swipe-reveal-link"><span class="swipe-reveal-icon">&times;</span></a>
+                    </div>
+                </div>
+                
+                <!--- ITEM 3 -->
+                <div class="swipe-item">
+                    <div class="swipe-content">
+                        <div class="swipe-content-title">Item 3</div>
+                        <div class="swipe-content-price"><strong>Price</strong>: $3.00</div>
+                        <div class="swipe-content-part"><strong>Part #</strong>: 34567</div>
+                    </div>
+                    <div class="swipe-reveal">
+                        <a href="#" class="swipe-reveal-link"><span class="swipe-reveal-icon">&times;</span></a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="page_footer">
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/swiped-events.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+.swipe-container * {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0.03rem;
+    line-height: 1.2;
+    color: #333;
+}
+
+
+/* PAGE LAYOUT */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* BASIC STYLING */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 16px;
+    margin-bottom: 0;
+    width: auto;
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+.swipe-container strong {
+    font-weight: 600;
+}
+
+
+/* SWIPE EVENTS */
+
+.swipe-container {}
+
+.swipe-list {
+    
+}
+
+.swipe-item {
+    display: flex;
+    max-width: 320px;
+    margin: 1rem auto;
+    border: 2px solid crimson;
+}
+
+.swipe-content {
+    width: 100%;
+    width: 75%;
+    border-right: 0;
+    padding: 1rem;
+}
+
+.swipe-content * {
+    cursor: default;
+}
+
+.swipe-content-title {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+    color: crimson;
+    transition: color 0.34s ease;
+}
+
+.swipe-content-title:hover {
+    color: maroon;
+}
+
+.swipe-content-price,
+.swipe-content-part {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.swipe-content strong {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.swipe-reveal {
+    position: relative;
+    width: 25%;
+}
+
+.swipe-reveal-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: crimson;
+    transition: background 0.34s ease;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.34s ease;
+}
+
+.swipe-open .swipe-reveal-link {
+    width: 100%;
+}
+
+.swipe-reveal-icon {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    color: crimson;
+    border-radius: 50%;
+    background: white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: color 0.34s ease;
+}
+
+.swipe-reveal-link:hover {
+    background: maroon;
+}
+
+.swipe-reveal-link:hover .swipe-reveal-icon {
+    color: maroon;
+}
+
+
+/* RESPONSIVE */
+/* < 960 */
+@media only screen and (max-width: 960px) {}
+
+/* < 768 */
+@media only screen and (max-width: 768px) {}
+
+/* < 480 */
+@media only screen and (max-width: 480px) {}
